@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adhithya Nithin R – Portfolio</title>
+<meta name="description" content="Healthcare data security, web application and NLP projects by Adhithya Nithin R, BE Computer Science and Engineering.">
+<style>
+:root{--bg:#f6f8f7;--ink:#17231d;--mute:#55655c;--green:#1f4d3a;--line:#d5ddd8;--gold:#e6b800}
+@media (prefers-color-scheme:dark){:root{--bg:#121a16;--ink:#e8efea;--mute:#9fb0a6;--green:#7fc4a0;--line:#2c3a33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:56px 22px 72px}
+h1{font:700 2.4rem/1.15 "Segoe UI",system-ui,sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+h2{font:650 1.35rem/1.3 "Segoe UI",system-ui,sans-serif;margin:0 0 4px}
+.sub,.tags{font-family:"Segoe UI",system-ui,sans-serif;color:var(--mute)}
+.sub{margin:0 0 14px}.tags{font-size:.9rem;margin:0 0 10px}
+a{color:var(--green);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+header{padding-bottom:28px;border-bottom:3px solid var(--gold);margin-bottom:8px}
+section{padding:30px 0;border-bottom:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font:.92rem "Segoe UI",system-ui,sans-serif;margin:14px 0}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+.wrap{overflow-x:auto}
+.lim{font-size:.95rem;color:var(--mute)}
+footer{padding-top:24px;font:.88rem "Segoe UI",system-ui,sans-serif;color:var(--mute)}
+</style></head><body><main>
+<header>
+<h1>Adhithya Nithin R</h1>
+<p class="sub">BE Computer Science and Engineering, S.A. Engineering College, Chennai. Healthcare data security, web application and NLP projects.</p>
+<p><a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a> · <a href="https://github.com/YOUR-GITHUB-USERNAME/portfolio">GitHub repository</a></p>
+</header>
+
+<section>
+<h2>Auto-Immune AI-Powered Secure Data Management for EMRs (AI DataLock)</h2>
+<p class="tags">Final-year project, Phase II, April 2026 · Team of 3 · Python Flask, MySQL, RSA, Fernet, JSON blockchain</p>
+<p>A web platform for storing and sharing electronic medical records securely. Patients upload encrypted reports, share them with chosen doctors and staff, and every upload, share and unauthorized access attempt is written to a hash-linked blockchain log. The report also designs hierarchical attribute-based encryption, Isolation Forest anomaly detection and proxy re-encryption on top of this.</p>
+<div class="wrap"><table>
+<tr><th>Reported metric</th><th>Conventional</th><th>AI DataLock</th></tr>
+<tr><td>Data access latency</td><td>120 ms</td><td>95 ms</td></tr>
+<tr><td>Unauthorized access detected</td><td>65%</td><td>98%</td></tr>
+<tr><td>Data integrity violations</td><td>12%</td><td>1%</td></tr>
+<tr><td>Downtime during a breach</td><td>45 min</td><td>5 min</td></tr>
+<tr><td>Re-encryption time</td><td>9.0 s</td><td>2.1 s</td></tr>
+</table></div>
+<p class="lim"><strong>Limits:</strong> figures come from the project report and the test setup is not documented. The appendix code covers RSA and Fernet file encryption, record sharing and the blockchain log. The attribute-based encryption, anomaly detection and re-encryption modules are design and results in the report, not shown in the appendix code. Demo software, not a production system.</p>
+<p><a href="https://github.com/YOUR-GITHUB-USERNAME/portfolio/tree/main/01-ai-datalock-emr">Project page</a></p>
+</section>
+
+<section>
+<h2>Smart Inventory &amp; Order Management System</h2>
+<p class="tags">Web application · Python, Flask, MySQL, HTML, CSS, JavaScript</p>
+<p>A web application for managing products, suppliers, customers and orders. Stock updates automatically when an order is placed, cancelled or restocked, and the dashboard flags products at or below their reorder level. A MySQL database holds products, orders and a history of every stock change, and the dashboard shows orders, inventory levels and sales reports.</p>
+<p class="lim"><strong>Limits:</strong> no user login yet, and the order form takes one product per order. Runs locally with sample data only.</p>
+<p><a href="https://github.com/YOUR-GITHUB-USERNAME/portfolio/tree/main/02-smart-inventory-oms">Project page</a></p>
+</section>
+
+<section>
+<h2>Emoji Generator from Text using NLP</h2>
+<p class="tags">ML Lab mini project, September 2023 · Team of 3 · Python, Hugging Face Transformers</p>
+<p>Reads a sentence, detects the emotions in it with a pre-trained DistilRoBERTa emotion classifier, and returns matching emojis. Any emotion scoring 0.20 or higher is kept, so a sentence with mixed feelings returns several emoji sets.</p>
+<div class="wrap"><table>
+<tr><th>Input</th><th>Detected</th></tr>
+<tr><td>I love spending time with my friends!</td><td>love (0.75), joy (0.65)</td></tr>
+</table></div>
+<p class="lim"><strong>Limits:</strong> the emotion model is pre-trained by others and used as is. The emoji sets are hand-written. No accuracy score is reported, only example outputs.</p>
+<p><a href="https://github.com/YOUR-GITHUB-USERNAME/portfolio/tree/main/03-emoji-generator-nlp">Project page</a></p>
+</section>
+
+<footer>Student and personal projects, not clinical systems or certified products. Claim sources: <a href="https://github.com/YOUR-GITHUB-USERNAME/portfolio/blob/main/VERIFICATION.md">VERIFICATION.md</a>.</footer>
+</main></body></html>
